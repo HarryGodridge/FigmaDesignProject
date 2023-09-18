@@ -155,6 +155,10 @@ header{
             line-height: 120%; /* 33.6px */
             letter-spacing: 0.84px;
             margin-bottom: 16px;
+
+            @media (max-width: 739px){
+                text-align: center;
+            }
         }
 
         &--hero{
@@ -175,6 +179,7 @@ header{
                 @media (max-width: 739px){
                     font-size: 72px;
                     letter-spacing: -1.44px;
+                    text-align: center;
                 }
             }
         }
@@ -217,6 +222,10 @@ header{
                 font-weight: 400;
                 line-height: 130%; /* 28.6px */
                 letter-spacing: 0.44px;
+
+                @media (max-width: 739px){
+                    text-align: center;
+                }
             }
         }
     }
@@ -228,9 +237,17 @@ header{
     font-weight: 600;
     line-height: 100%; /* 72px */
     letter-spacing: -1.44px;
+    margin-bottom: 56px;
+
     @media (max-width: 739px){
         font-size: 56px;
         letter-spacing: -1.12px;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    span{
+        color: var(--neutral-40);
     }
 }
 
@@ -252,12 +269,6 @@ header{
 }
 
 .latestWorks{
-    .sectionHeading{
-        margin-bottom: 56px;
-        @media (max-width: 739px){
-            margin-bottom: 32px;
-        }
-    }
 
     &__double{
         display: flex;
@@ -359,6 +370,69 @@ header{
                 margin-left: 12px;
             }
         }
+    }
+}
+
+.visualPartner{
+    &__list{
+        display: flex;
+        gap: 48px;
+        flex-wrap: wrap;
+
+        &--item{
+            width: calc(25% - 36px);
+            
+            @media (max-width: 739px){
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.strongLink{
+    color: var(--neutral-90) !important;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+    text-decoration-line: underline;
+    &:hover{
+        color: var(--neutral-40) !important;
+    }
+}
+
+.finalShowcase{
+    text-align: center;
+    background: var(--neutral-20);
+    &__cta{
+        margin-bottom: 56px;
+        display: flex;
+        justify-content: center;
+        @media (max-width: 979px){
+            margin-top: 32px;
+            width: 100%;
+            margin-bottom: 32px;
+            max-width: 100%;
+        }
+
+        a{
+            padding: 24px 48px !important;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 130%; /* 28.6px */
+            letter-spacing: 0.44px;
+            svg{
+                margin-left: 12px;
+            }
+        }
+    }
+
+    &__links{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
     }
 }
 

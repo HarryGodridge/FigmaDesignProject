@@ -148,6 +148,11 @@ header {
   letter-spacing: 0.84px;
   margin-bottom: 16px;
 }
+@media (max-width: 739px) {
+  .hero-unit__content--top {
+    text-align: center;
+  }
+}
 .hero-unit__content--hero {
   margin-bottom: 56px;
 }
@@ -171,6 +176,7 @@ header {
   .hero-unit__content--hero h1 {
     font-size: 72px;
     letter-spacing: -1.44px;
+    text-align: center;
   }
 }
 .hero-unit__content--double {
@@ -213,6 +219,11 @@ header {
   /* 28.6px */
   letter-spacing: 0.44px;
 }
+@media (max-width: 739px) {
+  .hero-unit__content--double .hero-unit__subheading {
+    text-align: center;
+  }
+}
 .sectionHeading {
   color: var(--neutral-100);
   font-size: 72px;
@@ -220,12 +231,18 @@ header {
   line-height: 100%;
   /* 72px */
   letter-spacing: -1.44px;
+  margin-bottom: 56px;
 }
 @media (max-width: 739px) {
   .sectionHeading {
     font-size: 56px;
     letter-spacing: -1.12px;
+    margin-bottom: 32px;
+    text-align: center;
   }
+}
+.sectionHeading span {
+  color: var(--neutral-40);
 }
 .projectHeading {
   color: var(--neutral-100, #030712);
@@ -243,14 +260,6 @@ header {
   line-height: 150%;
   /* 27px */
   letter-spacing: 0.36px;
-}
-.latestWorks .sectionHeading {
-  margin-bottom: 56px;
-}
-@media (max-width: 739px) {
-  .latestWorks .sectionHeading {
-    margin-bottom: 32px;
-  }
 }
 .latestWorks__double {
   display: flex;
@@ -348,6 +357,66 @@ header {
 }
 .latestWorks__cta a svg {
   margin-left: 12px;
+}
+.visualPartner__list {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+.visualPartner__list--item {
+  width: calc(25% - 36px);
+}
+@media (max-width: 739px) {
+  .visualPartner__list--item {
+    width: 100%;
+    text-align: center;
+  }
+}
+.strongLink {
+  color: var(--neutral-90) !important;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  /* 21px */
+  text-decoration-line: underline;
+}
+.strongLink:hover {
+  color: var(--neutral-40) !important;
+}
+.finalShowcase {
+  text-align: center;
+  background: var(--neutral-20);
+}
+.finalShowcase__cta {
+  margin-bottom: 56px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 979px) {
+  .finalShowcase__cta {
+    margin-top: 32px;
+    width: 100%;
+    margin-bottom: 32px;
+    max-width: 100%;
+  }
+}
+.finalShowcase__cta a {
+  padding: 24px 48px !important;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 130%;
+  /* 28.6px */
+  letter-spacing: 0.44px;
+}
+.finalShowcase__cta a svg {
+  margin-left: 12px;
+}
+.finalShowcase__links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 footer {
   padding: 72px 0 48px 0;
