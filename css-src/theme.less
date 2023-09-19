@@ -373,6 +373,114 @@ header{
     }
 }
 
+h5{
+    color: var(--neutral-100, #030712);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 100%; /* 40px */
+    letter-spacing: -0.8px;
+}
+
+.selectedWorks{
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid var(--neutral-20);
+
+        @media (max-width: 739px){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__list{
+        &--itemLarge{
+
+            .listItemImg{
+                img{
+                    border-radius: 20px;
+                    width: 100%;
+                }
+            }
+        }
+
+        .listItemSection{
+            padding-bottom: 48px;
+            border-bottom: 1px solid var(--neutral-20);
+            margin-bottom: 48px;
+        }
+
+        .listItemTop{
+            display: flex;
+            justify-content: space-between;
+            gap: 72px;
+            margin-bottom: 32px;
+
+            @media (max-width: 979px){
+                flex-direction: column;
+                gap: 12px;
+            }
+            &__left{
+                width: 50%;
+
+                @media (max-width: 1279px){
+                    width: 40%;   
+                }
+
+                @media (max-width: 979px){
+                    width: 100%;
+                }
+            }
+
+            &__mid{
+                width: 30%;
+
+                @media (max-width: 1279px){
+                    width: 35%;
+                }
+
+                @media (max-width: 979px){
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+
+            &__right{
+                width: 20%;
+                display: flex;
+                gap: 8px;
+                justify-content: flex-end;
+                align-items: flex-start;
+
+                @media (max-width: 1279px){
+                    width: 25%;
+                }
+
+                @media (max-width: 979px){
+                    width: 100%;
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+
+    &__cta{
+        margin-left: 24px;
+
+        @media (max-width: 739px){
+            margin-left: 0px;
+            margin-top: 12px;
+        }
+        a{
+            svg{
+                margin-left: 12px;
+            }
+        }
+    }
+}
+
 .visualPartner{
     &__list{
         display: flex;
