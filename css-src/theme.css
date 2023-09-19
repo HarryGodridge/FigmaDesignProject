@@ -399,6 +399,9 @@ h5 {
     flex-direction: column;
     gap: 12px;
   }
+  .selectedWorks__list .listItemTop:last-child {
+    margin-bottom: 0px !important;
+  }
 }
 .selectedWorks__list .listItemTop__left {
   width: 50%;
